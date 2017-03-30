@@ -51,29 +51,14 @@ A kitchen has many items.
 
 ```json
 { "kitchen": {
-    "appliance": "stove"
-  }
-}
-{"cupboard":{
-    "dinnerware": "bowl"
-  }
-}
-{"cupboard":{
-    "dinnerware": "plate"
-  }
-}
-{ "stove": {
-    "size": "small"
-  }
-}
-{"rack":{
-  "spice": "chives",
-  "shelf": "top"
-  }
-}
-{"rack":{
-  "spice": "nutmeg",
-  "shelf": "bottom"
+    "cupboard": ["bowls", "plates"],
+    "stove": {
+      "heatElement":["small", "medium" , "large", "extra large"],
+    },
+    "herbsAndSpices": {
+      "rackOne": ["chives", "lemon grass", "mint"],
+      "rackTwo": ["cinnamon", "nutmeg", "vanilla"],
+    }
   }
 }
 ```
@@ -88,35 +73,20 @@ Copy the JSON that you wrote for the previous question and include the new infor
 
 ```json
 { "kitchen": {
-    "appliance": "stove"
-  }
-}
-{"cupboard":{
-    "dinnerware": "bowl"
-  }
-}
-{"cupboard":{
-    "dinnerware": "plate"
-  }
-}
-{ "stove": {
-    "size": "small"
-  }
-}
-{"rack":{
-  "spice": "chives",
-  "shelf": "top"
-  }
-}
-{"rack":{
-  "spice": "nutmeg",
-  "shelf": "bottom"
-  }
-}
-{"fruit_basket":{
-    "num_fuji_apples": 2,
-    "num_gala_apples": 7,
-    "num_golden_apples": 1
+    "cupboard": ["bowls", "plates"],
+    "stove": {
+      "heatElement":["small", "medium" , "large", "extra large"],
+    },
+    "herbsAndSpices": {
+      "rackOne": ["chives", "lemon grass", "mint"],
+      "rackTwo": ["cinnamon", "nutmeg", "vanilla"],
+    }
+    {"fruitBasket":{
+        "fuji": 2,
+        "gala": 7,
+        "golden": 1,
+      }
+    }
   }
 }
 ```
